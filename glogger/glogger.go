@@ -9,6 +9,9 @@ type Logger struct {
 	verbosity uint
 }
 
+// Default instance of Logger.
+var L Logger
+
 func (l *Logger) SetVerbosity(level uint) {
 	l.verbosity = level
 }
